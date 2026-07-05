@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>นโยบายความเป็นส่วนตัว & การติดต่อ — Juris Voice</title>
+  <style>
+    body {
+      font-family: 'Sarabun', 'TH Sarabun New', sans-serif;
+      font-size: 16px;
+      line-height: 1.8;
+      color: #1a1a1a;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 24px 64px;
+      background: #fffdf9;
+    }
+    h1 { font-size: 26px; margin-bottom: 4px; color: #8a2b1c; }
+    h2 { font-size: 18px; margin-top: 32px; border-bottom: 1px solid #ddd; padding-bottom: 6px; }
+    p, li { margin: 8px 0; }
+    a { color: #a93225; }
+    .updated { color: #666; font-size: 14px; margin-bottom: 32px; }
+    .back { display: inline-block; margin-bottom: 24px; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <a class="back" href="./">← กลับหน้าแรก Juris Voice</a>
+  <h1>นโยบายความเป็นส่วนตัว</h1>
+  <p class="updated">ปรับปรุงล่าสุด: 5 กรกฎาคม พ.ศ. 2569</p>
+
+  <p>แอปพลิเคชัน <strong>Juris Voice (ประมวลกฎหมาย)</strong> พัฒนาและดูแลโดยทีม <strong>LawCodeTH</strong>
+  ให้บริการบน Android (Google Play) และ iOS (App Store) นโยบายฉบับนี้อธิบายวิธีที่แอปเก็บรวบรวม ใช้ และปกป้องข้อมูลของผู้ใช้บนทั้งสองแพลตฟอร์ม</p>
+
+  <h2>ข้อมูลที่เก็บบนอุปกรณ์ (ทุกคน)</h2>
+  <p>โดยพื้นฐานแอปทำงานได้โดยไม่ต้องสมัครสมาชิก ข้อมูลต่อไปนี้เก็บไว้ใน local storage ของอุปกรณ์เท่านั้น:</p>
+  <ul>
+    <li>บุ๊กมาร์กมาตราที่บันทึกไว้ และโฟลเดอร์ติวที่สร้างเอง</li>
+    <li>ประวัติการอ่าน/ฟัง และสถิติจำนวนรอบที่ทบทวนแต่ละมาตรา</li>
+    <li>โน้ตส่วนตัวและไฮไลต์ที่ทำไว้ในแต่ละมาตรา</li>
+    <li>การตั้งค่าแอป (ธีม ขนาดตัวอักษร ความเร็วเสียง เสียงพากย์)</li>
+    <li>สถานะการซื้อ Pro (ยืนยันผ่าน Google Play Billing หรือ Apple App Store ตามแพลตฟอร์มที่ใช้)</li>
+  </ul>
+
+  <h2>บัญชีผู้ใช้และการซิงก์ข้ามอุปกรณ์ (ถ้าเลือกเข้าสู่ระบบ)</h2>
+  <p>แอปมีฟีเจอร์เข้าสู่ระบบแบบไม่บังคับผ่าน <strong>Google Sign-In</strong> หรือ <strong>Sign in with Apple</strong>
+  (ดำเนินการผ่าน Firebase Authentication) เพื่อสำรองและซิงก์บุ๊กมาร์ก โน้ต ไฮไลต์ และการตั้งค่าข้ามอุปกรณ์ของคุณเอง
+  หากเข้าสู่ระบบ ข้อมูลข้างต้นจะถูกจัดเก็บบนเซิร์ฟเวอร์ Google Cloud Firestore (ภูมิภาคสิงคโปร์) โดยผูกกับบัญชีของคุณเท่านั้น
+  เพื่อป้องกันการใช้บัญชีร่วมกันเกินควร ระบบจำกัดจำนวนอุปกรณ์ที่ใช้งานพร้อมกันไว้ที่ 3 เครื่องต่อบัญชี
+  และจะถือว่าอุปกรณ์ไม่ได้ใช้งานหากไม่ได้เข้าสู่ระบบเกิน 30 วัน</p>
+  <p>หากไม่ต้องการซิงก์ข้อมูล สามารถใช้แอปแบบไม่เข้าสู่ระบบได้ตามปกติ ข้อมูลจะเก็บบนเครื่องเท่านั้น</p>
+  <p>ต้องการลบบัญชีและข้อมูลบนคลาวด์ทั้งหมด ติดต่อได้ที่อีเมลด้านล่าง ทีมงานจะดำเนินการลบภายใน 7 วัน</p>
+
+  <h2>การโฆษณา (Google AdMob)</h2>
+  <p>ผู้ใช้ที่ยังไม่ได้ซื้อ Pro จะเห็นโฆษณาจาก <strong>Google AdMob</strong> ทั้งบน Android และ iOS
+  Google อาจใช้ตัวระบุโฆษณาที่ไม่สามารถระบุตัวตนได้ (เช่น Advertising ID หรือ IDFA) เพื่อแสดงโฆษณาที่เกี่ยวข้อง
+  รายละเอียดเพิ่มเติมอยู่ที่ <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">นโยบายความเป็นส่วนตัวของ Google</a></p>
+  <p>บน iOS แอปจะขออนุญาตติดตาม (App Tracking Transparency) ก่อนใช้ IDFA ตามข้อกำหนดของ Apple
+  ผู้ใช้สามารถปฏิเสธได้โดยไม่กระทบการใช้งานแอป ผู้ใช้ Pro จะไม่มีโฆษณา</p>
+
+  <h2>การซื้อในแอป (In-App Purchase)</h2>
+  <p>การซื้อ Pro ดำเนินการผ่าน <strong>Google Play Billing</strong> (Android) หรือ <strong>Apple In-App Purchase / StoreKit</strong> (iOS)
+  ทั้งหมด แอปไม่เก็บข้อมูลบัตรเครดิตหรือข้อมูลการชำระเงินใด ๆ ไว้เอง
+  ดูนโยบายของผู้ให้บริการแต่ละรายได้ที่
+  <a href="https://play.google.com/about/play-terms/" target="_blank" rel="noopener">Google Play</a> หรือ
+  <a href="https://www.apple.com/legal/internet-services/itunes/" target="_blank" rel="noopener">Apple Media Services</a></p>
+
+  <h2>สิทธิ์ที่แอปขอใช้</h2>
+  <ul>
+    <li><strong>อินเทอร์เน็ต</strong> — โหลดโฆษณาจาก AdMob และซิงก์ข้อมูล (เฉพาะผู้เข้าสู่ระบบ)</li>
+    <li><strong>การติดตาม (iOS ATT)</strong> — ใช้เพื่อแสดงโฆษณาที่เกี่ยวข้องเท่านั้น เลือกปฏิเสธได้</li>
+  </ul>
+  <p>แอปไม่ขอสิทธิ์เข้าถึงตำแหน่ง กล้อง ไมโครโฟน รายชื่อผู้ติดต่อ หรือพื้นที่เก็บข้อมูลภายนอกของอุปกรณ์</p>
+
+  <h2>ผู้เยาว์</h2>
+  <p>แอปนี้ไม่มีเนื้อหาที่ไม่เหมาะสมสำหรับผู้เยาว์ และไม่เก็บข้อมูลจากเด็กอายุต่ำกว่า 13 ปีโดยเจตนา</p>
+
+  <h2>การเปลี่ยนแปลงนโยบาย</h2>
+  <p>หากมีการเปลี่ยนแปลงนโยบายนี้ จะแจ้งให้ทราบผ่านการอัปเดตแอปหรือหน้านี้
+  วันที่ "ปรับปรุงล่าสุด" ด้านบนจะถูกอัปเดตทุกครั้ง</p>
+
+  <h2>ติดต่อ / ขอความช่วยเหลือ (Support)</h2>
+  <p>หากมีข้อสงสัยเกี่ยวกับนโยบายนี้ ปัญหาการใช้งาน หรือต้องการลบบัญชี/ข้อมูล ติดต่อได้ที่:<br />
+  <a href="mailto:thailawcodeapp@gmail.com">thailawcodeapp@gmail.com</a></p>
+</body>
+</html>
